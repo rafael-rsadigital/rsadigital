@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta Comercial - MJ Soluções</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        @media print {
+            .no-print { display: none; }
+            .print-card { border: none !important; box-shadow: none !important; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen pb-12">
+
+    <div class="max-w-4xl mx-auto pt-6 px-4 no-print flex justify-end">
+        <button onclick="window.print()" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg shadow-sm transition duration-200 text-sm">
+            Imprimir ou Salvar PDF
+        </button>
+    </div>
+
+    <main class="max-w-4xl mx-auto mt-6 bg-white border border-slate-100 rounded-2xl shadow-xl p-8 md:p-12 print-card">
+        <header class="border-b border-slate-100 pb-8 mb-8">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4">
+                <div>
+                    <span class="text-xs font-semibold tracking-wider text-blue-600 uppercase">Proposta Comercial</span>
+                    <h1 class="text-2xl md:text-3xl font-bold text-slate-900 mt-1">ESTRUTURAÇÃO DIGITAL & SEO LOCAL</h1>
+                </div>
+                <div class="text-left md:text-right text-sm text-slate-500 space-y-1">
+                    <p><strong>Cliente:</strong> Maycon</p>
+                    <p><strong>Empresa:</strong> MJ Soluções</p>
+                    <p><strong>Responsável:</strong> Rafael Assis – RSA Digital</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="space-y-8">
+            <h2 class="text-xl font-bold text-slate-900 border-b pb-2 border-slate-100">1. ESCOPO DOS SERVIÇOS</h2>
+
+            <div class="bg-slate-50/50 p-6 rounded-xl border border-slate-100">
+                <h3 class="text-lg font-semibold text-slate-900">GOOGLE MEU NEGÓCIO (RECUPERAÇÃO E SEO)</h3>
+                <p class="text-sm text-slate-500 mt-1">Recuperação e profissionalização do perfil para dominar as buscas de serviços na região.</p>
+                <ul class="mt-4 space-y-3 text-sm text-slate-600">
+                    <li>• <strong>Setup e Otimização:</strong> Verificação do perfil, configuração de categorias estratégicas, upload de fotos/logo, descrição detalhada de serviços e área de cobertura.</li>
+                    <li>• <strong>Conversão:</strong> Inclusão de botões diretos de WhatsApp e redes sociais.</li>
+                    <li>• <strong>Autoridade:</strong> Cadastro em diretórios locais e postagens iniciais otimizadas.</li>
+                    <li>• <strong>Gestão (Opcional):</strong> Monitoramento e manutenção estratégica nos meses subsequentes.</li>
+                </ul>
+            </div>
+
+            <div class="bg-slate-50/50 p-6 rounded-xl border border-slate-100">
+                <h3 class="text-lg font-semibold text-slate-900">DESENVOLVIMENTO WEB</h3>
+                <p class="text-sm text-slate-500 mt-1">Soluções em HTML estruturado com foco em alta performance e SEO.</p>
+                
+                <div class="mt-4 space-y-3">
+                    <div class="bg-white p-4 rounded-lg border border-slate-100 shadow-sm">
+                        <div class="flex justify-between items-center"><span class="font-semibold text-sm">Opção 1: Site OnePage (Básico)</span><span class="font-bold text-sm">R$ 450,00</span></div>
+                        <p class="text-xs text-slate-500 mt-1">Informações essenciais, apresentação dos serviços e links diretos de contato.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg border border-slate-100 shadow-sm">
+                        <div class="flex justify-between items-center"><span class="font-semibold text-sm">Opção 2: Site Institucional (Páginas essenciais)</span><span class="font-bold text-sm">R$ 900,00</span></div>
+                        <p class="text-xs text-slate-500 mt-1">Home, Serviços, Contato e Galeria. Código HTML estruturado para performance.</p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg border border-slate-100 shadow-sm">
+                        <div class="flex justify-between items-center"><span class="font-semibold text-sm">Opção 3: Autoridade Digital (Site Robustos/SEO Local)</span><span class="font-bold text-sm">R$ 2.500,00</span></div>
+                        <p class="text-xs text-slate-500 mt-1">Multipáginas com SEO Local avançado. Páginas dedicadas por bairro/cidade e por nichos (Elétrica, Automação, Drywall, etc).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="space-y-6 mt-12">
+            <h2 class="text-xl font-bold text-slate-900 border-b pb-2 border-slate-100">2. INVESTIMENTO E CONDIÇÕES</h2>
+            <div class="overflow-x-auto border border-slate-100 rounded-xl">
+                <table class="min-w-full divide-y divide-slate-100 text-sm">
+                    <thead class="bg-slate-50">
+                        <tr>
+                            <th class="px-6 py-4 text-left font-semibold text-slate-900">Serviço</th>
+                            <th class="px-6 py-4 text-center font-semibold text-slate-900">Setup/Valor Unico</th>
+                            <th class="px-6 py-4 text-center font-semibold text-slate-900">Gestão Adicional (2 meses)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <tr>
+                            <td class="px-6 py-4">Google Meu Negócio</td>
+                            <td class="px-6 py-4 text-center">R$ 697,00</td>
+                            <td class="px-6 py-4 text-center">R$ 297,00/mês</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4">Site (Opções)</td>
+                            <td class="px-6 py-4 text-center" colspan="2">R$ 450,00 | R$ 900,00 | R$ 2.500,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
