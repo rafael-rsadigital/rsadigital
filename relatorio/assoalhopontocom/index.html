@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório Assoalho.com - Junho 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #faf9f6; color: #1c1917; }
+        /* Identidade Assoalho.com: Ébano, Bronze e Âmbar Nobre */
+        .card { background: #ffffff; border-radius: 1rem; box-shadow: 0 4px 20px -2px rgb(41 21 7 / 0.05); height: 100%; border: 1px solid #e7e5e4; }
+        .section-title { border-left: 4px solid #d97706; padding-left: 1rem; font-weight: 700; color: #1c1917; margin-bottom: 1rem; }
+        .brand-dark { background-color: #1c1917; }
+        
+        @media (max-width: 640px) {
+            .mobile-center { text-align: center; justify-content: center; }
+        }
+    </style>
+</head>
+<body class="p-3 md:p-8">
+
+    <div class="max-w-5xl mx-auto space-y-6 md:space-y-8">
+        <!-- Header -->
+        <header class="brand-dark text-white p-6 md:p-10 rounded-2xl flex flex-col md:flex-row justify-between items-center shadow-2xl border border-stone-800">
+            <div class="text-center md:text-left">
+                <h1 class="text-3xl md:text-4xl font-extrabold tracking-tighter uppercase text-amber-500">ASSOALHO.COM</h1>
+                <p class="text-stone-400 mt-1 uppercase tracking-widest text-[10px] md:text-xs font-semibold">Análise de Desempenho e Presença Digital</p>
+            </div>
+            <div class="mt-6 md:mt-0 text-center md:text-right md:border-l md:border-stone-800 md:pl-8 pt-4 md:pt-0">
+                <p class="text-sm font-bold text-amber-500">Relatório Mensal: Junho de 2026</p>
+                <p class="text-xs text-stone-400">Gerado em: 10 de julho de 2026</p>
+            </div>
+        </header>
+
+        <!-- 1. Visão Geral -->
+        <section class="card p-6 md:p-8">
+            <h2 class="section-title text-xl text-center md:text-left">1. Visão Geral de Desempenho</h2>
+            <p class="text-stone-600 leading-relaxed mb-8 text-center md:text-left text-sm md:text-base">
+                O mês de junho marcou o início de atualizações cruciais no Perfil da Empresa. A reestruturação da categoria principal e a adição de categorias secundárias retiraram a empresa de um estado de invisibilidade orgânica, permitindo que o perfil começasse a aparecer nas buscas com maior relevância e facilidade.
+            </p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+                <div class="bg-stone-50 p-6 rounded-xl flex flex-col md:flex-row items-center md:justify-between border border-stone-100 text-center md:text-left">
+                    <div class="mb-4 md:mb-0">
+                        <p class="text-[10px] font-bold text-stone-500 uppercase mb-1 tracking-widest">Visualizações do Perfil</p>
+                        <h3 class="text-3xl font-black text-stone-900">223 Pessoas</h3>
+                        <p class="text-stone-500 text-xs mt-1">Visitantes únicos no Google</p>
+                    </div>
+                    <div class="text-amber-500/10 hidden md:block">
+                        <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 20 20"><path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path><path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"></path></svg>
+                    </div>
+                </div>
+                <div class="bg-stone-50 p-6 rounded-xl flex flex-col md:flex-row items-center md:justify-between border border-stone-100 text-center md:text-left">
+                    <div class="mb-4 md:mb-0">
+                        <p class="text-[10px] font-bold text-stone-500 uppercase mb-1 tracking-widest">Interações Totais</p>
+                        <h3 class="text-3xl font-black text-stone-900">89 Ações</h3>
+                        <p class="text-green-600 text-xs font-semibold mt-1">Taxa de Engajamento: ~40%</p>
+                    </div>
+                    <div class="text-amber-500/10 hidden md:block">
+                        <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd"></path></svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2 e 3. Engajamento e Origem -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
+            <!-- Ações Detalhadas -->
+            <section class="card p-6 md:p-8">
+                <h2 class="section-title text-xl text-center md:text-left">2. Engajamento Detalhado</h2>
+                <div class="grid grid-cols-2 gap-3 md:gap-4">
+                    <div class="p-4 bg-stone-50 rounded-lg border border-stone-100 text-center col-span-2">
+                        <p class="text-[10px] text-stone-500 font-bold uppercase mb-1">Solicitações de Rotas</p>
+                        <p class="text-3xl font-black text-stone-900">65</p>
+                        <p class="text-[10px] text-amber-600 font-bold">73% do engajamento total</p>
+                    </div>
+                    <div class="p-4 bg-stone-50 rounded-lg border border-stone-100 text-center">
+                        <p class="text-[10px] text-stone-500 font-bold uppercase mb-1">Cliques no Site</p>
+                        <p class="text-xl font-black text-stone-900">10</p>
+                        <p class="text-[9px] text-stone-400 font-medium">Cliques direcionados</p>
+                    </div>
+                    <div class="p-4 bg-stone-50 rounded-lg border border-stone-100 text-center">
+                        <p class="text-[10px] text-stone-500 font-bold uppercase mb-1">Cliques Chat</p>
+                        <p class="text-xl font-black text-stone-900">10</p>
+                        <p class="text-[9px] text-stone-400 font-medium">Contatos diretos</p>
+                    </div>
+                    <div class="p-4 bg-stone-50 rounded-lg border border-stone-100 text-center col-span-2">
+                        <p class="text-[10px] text-stone-500 font-bold uppercase mb-1">Chamadas Telefônicas</p>
+                        <p class="text-xl font-black text-stone-900">4</p>
+                        <p class="text-[9px] text-stone-400 font-medium">Ligações efetuadas</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Origem do Tráfego -->
+            <section class="card p-6 md:p-8 flex flex-col items-center md:items-start">
+                <h2 class="section-title text-xl w-full text-center md:text-left">3. Origem do Tráfego</h2>
+                <div class="flex-grow flex flex-col md:flex-row items-center gap-6 w-full">
+                    <div class="w-full max-w-[150px] md:max-w-[170px]">
+                        <canvas id="origemChart"></canvas>
+                    </div>
+                    <div class="flex-grow space-y-2 text-[10px] md:text-xs font-semibold w-full">
+                        <div class="flex justify-between border-b border-stone-100 pb-1">
+                            <span class="flex items-center"><span class="w-2 h-2 rounded-full bg-green-500 mr-2"></span> Busca (Móvel)</span> 
+                            <span class="text-stone-700">87 (39%)</span>
+                        </div>
+                        <div class="flex justify-between border-b border-stone-100 pb-1">
+                            <span class="flex items-center"><span class="w-2 h-2 rounded-full bg-red-500 mr-2"></span> Busca (Desktop)</span> 
+                            <span class="text-stone-700">73 (33%)</span>
+                        </div>
+                        <div class="flex justify-between border-b border-stone-100 pb-1">
+                            <span class="flex items-center"><span class="w-2 h-2 rounded-full bg-yellow-500 mr-2"></span> Maps (Móvel)</span> 
+                            <span class="text-stone-700">44 (20%)</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="flex items-center"><span class="w-2 h-2 rounded-full bg-blue-500 mr-2"></span> Maps (Desktop)</span> 
+                            <span class="text-stone-700">19 (9%)</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- 4. Termos de Pesquisa -->
+        <section class="card p-6 md:p-8">
+            <h2 class="section-title text-xl text-center md:text-left">4. Termos de Pesquisa Mais Relevantes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 mt-4">
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex items-center justify-between mb-1">
+                            <span class="text-sm font-bold text-stone-700">1. Assoalho</span>
+                            <span class="text-xs font-black text-amber-700">18</span>
+                        </div>
+                        <div class="overflow-hidden h-2 flex rounded bg-stone-100">
+                            <div style="width:100%" class="bg-amber-600 rounded-full"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-1">
+                            <span class="text-sm font-bold text-stone-400 italic text-xs">2. Assoalho.com</span>
+                            <span class="text-xs font-black text-stone-400">< 15</span>
+                        </div>
+                        <div class="overflow-hidden h-2 flex rounded bg-stone-100">
+                            <div style="width:60%" class="bg-amber-500 rounded-full"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-1">
+                            <span class="text-sm font-bold text-stone-400 italic text-xs">3. Empresa que lixa assoalho de madeira</span>
+                            <span class="text-xs font-black text-stone-400">< 15</span>
+                        </div>
+                        <div class="overflow-hidden h-2 flex rounded bg-stone-100">
+                            <div style="width:50%" class="bg-amber-400 rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex items-center justify-between mb-1">
+                            <span class="text-sm font-bold text-stone-400 italic text-xs">4. Piso vinílico mogi das cruzes</span>
+                            <span class="text-xs font-black text-stone-400">< 15</span>
+                        </div>
+                        <div class="overflow-hidden h-2 flex rounded bg-stone-100">
+                            <div style="width:45%" class="bg-stone-400 rounded-full"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-1">
+                            <span class="text-sm font-bold text-stone-400 italic text-xs">5. Piso vinílico pronta entrega perto de mim</span>
+                            <span class="text-xs font-black text-stone-400">< 15</span>
+                        </div>
+                        <div class="overflow-hidden h-2 flex rounded bg-stone-100">
+                            <div style="width:40%" class="bg-stone-400 rounded-full"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-1">
+                            <span class="text-sm font-bold text-stone-400 italic text-xs">6. Rodapé lojas</span>
+                            <span class="text-xs font-black text-stone-400">< 15</span>
+                        </div>
+                        <div class="overflow-hidden h-2 flex rounded bg-stone-100">
+                            <div style="width:35%" class="bg-stone-300 rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Análise Crítica -->
+        <section class="card p-6 md:p-8">
+            <h2 class="section-title text-xl text-center md:text-left">5. Análise Crítica e Diagnóstico</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mt-4">
+                <!-- Perfil de Acesso -->
+                <div class="space-y-4">
+                    <h3 class="text-xs font-black text-stone-500 uppercase tracking-widest flex items-center justify-center md:justify-start">
+                        Perfil de Acesso
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="p-4 bg-stone-50 rounded-xl border border-stone-200 text-center md:text-left">
+                            <strong class="text-stone-900 text-sm block mb-1 font-bold">Origem Consistente via Celular</strong>
+                            <p class="text-xs text-stone-600">Aproximadamente 59% das pesquisas e visualizações são feitas através de dispositivos móveis, ressaltando o comportamento ágil do usuário final na busca por soluções de pisos e acabamentos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Oportunidades: Alto Contraste -->
+                <div class="space-y-4">
+                    <h3 class="text-xs font-black text-red-600 uppercase tracking-widest flex items-center justify-center md:justify-start">
+                        Oportunidades de Melhoria
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="p-4 bg-red-50 rounded-xl border border-red-200 text-center md:text-left">
+                            <strong class="text-red-900 text-sm block mb-1 font-bold">Fluxo de Avaliações</strong>
+                            <p class="text-xs text-stone-700 leading-relaxed font-medium">O perfil conta com um bom histórico de 21 avaliações, porém já se passaram 3 semanas sem novos recebimentos. O ideal para o segmento é manter um ritmo semanal de feedbacks para manter o perfil ativo aos olhos do algoritmo do Google.</p>
+                        </div>
+                        <div class="p-4 bg-red-50 rounded-xl border border-red-200 text-center md:text-left">
+                            <strong class="text-red-900 text-sm block mb-1 font-bold">Alimentação Contínua de Mídia</strong>
+                            <p class="text-xs text-stone-700 leading-relaxed font-medium">É essencial persistir no envio frequente de fotos originais e sem edição para solidificar o ganho recente de posições nas buscas locais.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Recomendações -->
+        <section class="card overflow-hidden border-amber-600/30">
+            <div class="brand-dark text-white p-6 md:p-10 border-t-4 border-amber-500">
+                <h2 class="text-2xl font-bold mb-8 text-center md:text-left uppercase">6. Próximas Etapas e Recomendações</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Google Meu Negócio -->
+                    <div class="space-y-3 text-center md:text-left">
+                        <div class="text-amber-500 font-black text-[10px] uppercase tracking-widest">Google Meu Negócio</div>
+                        <h4 class="font-bold text-lg leading-tight text-white">Fotos com Localização</h4>
+                        <p class="text-stone-400 text-xs leading-relaxed">
+                            Alimentar o perfil com fotos originais tiradas diretamente do celular, de preferência com a localização ativa (GPS) ligada. Isso reforça a proximidade com o cliente.
+                        </p>
+                        <p class="text-stone-400 text-xs leading-relaxed">
+                            Cadastrar a empresa em diretórios locais de relevância regional.
+                        </p>
+                    </div>
+                    <!-- Prova Social -->
+                    <div class="space-y-3 text-center md:text-left">
+                        <div class="text-amber-500 font-black text-[10px] uppercase tracking-widest">Prova Social</div>
+                        <h4 class="font-bold text-lg leading-tight text-white">Solicitação Sistemática</h4>
+                        <p class="text-stone-400 text-xs mb-3 leading-relaxed">Pedir avaliações no encerramento do serviço, incentivando que mencionem o nome do produto ou técnica (ex: lixamento, piso vinílico).</p>
+                        <div class="bg-white/5 p-4 rounded-lg border border-white/10 text-xs text-amber-200 italic leading-relaxed">
+                            "Fizemos a restauração do assoalho de madeira e o serviço ficou perfeito! Atendimento impecável desde o orçamento."
+                        </div>
+                    </div>
+                    <!-- Redes Sociais -->
+                    <div class="space-y-3 text-center md:text-left">
+                        <div class="text-amber-500 font-black text-[10px] uppercase tracking-widest">Redes Sociais</div>
+                        <h4 class="font-bold text-lg leading-tight text-white">Otimização do Instagram</h4>
+                        <p class="text-stone-400 text-xs leading-relaxed">
+                            Adaptar a bio do Instagram para buscas orgânicas (SEO Local). Nas legendas das postagens, cite explicitamente o nome dos serviços prestados e a sua geolocalização.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-stone-900 p-6 flex flex-col md:flex-row justify-between items-center text-[9px] font-bold text-stone-500 uppercase tracking-widest border-t border-white/5">
+                <div>Elaborado para: Assoalho.com</div>
+                <div class="mt-2 md:mt-0 opacity-60">Data de emissão: 10 de julho de 2026</div>
+            </div>
+        </section>
+
+        <footer class="text-center py-6 text-stone-600 text-[10px] font-medium tracking-tighter">
+            &copy; 2026 ASSOALHO.COM &bull; INTELIGÊNCIA COMERCIAL E PRESENÇA DIGITAL
+        </footer>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('origemChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Busca Móvel', 'Busca Desktop', 'Maps Móvel', 'Maps Desktop'],
+                datasets: [{
+                    data: [87, 73, 44, 19],
+                    backgroundColor: [
+                        '#22c55e', // Verde (Busca Móvel)
+                        '#ef4444', // Vermelho (Busca Desktop)
+                        '#eab308', // Amarelo (Maps Móvel)
+                        '#3b82f6'  // Azul (Maps Desktop)
+                    ],
+                    borderWidth: 0,
+                    hoverOffset: 12
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                plugins: {
+                    legend: { display: false }
+                },
+                cutout: '75%',
+                animation: { duration: 2000, easing: 'easeOutQuart' }
+            }
+        });
+    </script>
+</body>
+</html>
