@@ -43,61 +43,73 @@
             </div>
             <div class="bg-slate-900 border border-slate-800 px-3 py-1 rounded-lg text-xs text-slate-300 flex items-center gap-2">
                 <i class="fa-regular fa-calendar text-brand-orange"></i>
-                <span>Junho / 2026</span>
+                <span class="hidden xs:inline">Junho / 2026</span>
             </div>
         </div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 space-y-6 sm:space-y-8">
 
         <!-- CARDS DE MÉTRICAS PRINCIPAIS -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
             <!-- Card 1: Visualizações -->
-            <div class="bg-gradient-to-br from-slate-950 to-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl relative overflow-hidden">
-                <div class="absolute right-4 top-4 text-slate-800/30 text-5xl">
-                    <i class="fa-solid fa-eye"></i>
+            <div class="bg-gradient-to-br from-slate-950 to-slate-900 border border-slate-800 rounded-xl p-4 sm:p-6 shadow-xl relative overflow-hidden flex flex-row sm:flex-col justify-between items-center sm:items-start gap-4">
+                <div class="flex items-center sm:block gap-3">
+                    <div class="sm:absolute sm:right-4 sm:top-4 text-slate-700/50 sm:text-slate-800/30 text-2xl sm:text-5xl">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <div>
+                        <span class="text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-slate-400">Visualizações</span>
+                        <div class="flex items-baseline space-x-2 mt-0.5 sm:mt-2">
+                            <span class="text-2xl sm:text-4xl font-extrabold text-white">543</span>
+                            <span class="text-[10px] sm:text-xs text-emerald-400 font-semibold"><i class="fa-solid fa-arrow-up"></i> Estável</span>
+                        </div>
+                    </div>
                 </div>
-                <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Visualizações Totais</span>
-                <div class="flex items-baseline space-x-2 mt-2">
-                    <span class="text-4xl font-extrabold text-white">543</span>
-                    <span class="text-xs text-emerald-400 font-semibold"><i class="fa-solid fa-arrow-up"></i> Estável</span>
-                </div>
-                <p class="text-xs text-slate-500 mt-2">Fichas de pesquisa orgânica e visualizações no Google Maps.</p>
+                <p class="hidden md:block text-xs text-slate-500 mt-2">Fichas de pesquisa orgânica e visualizações no Google Maps.</p>
             </div>
 
             <!-- Card 2: Interações -->
-            <div class="bg-gradient-to-br from-slate-950 to-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl relative overflow-hidden">
-                <div class="absolute right-4 top-4 text-slate-800/30 text-5xl">
-                    <i class="fa-solid fa-route"></i>
+            <div class="bg-gradient-to-br from-slate-950 to-slate-900 border border-slate-800 rounded-xl p-4 sm:p-6 shadow-xl relative overflow-hidden flex flex-row sm:flex-col justify-between items-center sm:items-start gap-4">
+                <div class="flex items-center sm:block gap-3">
+                    <div class="sm:absolute sm:right-4 sm:top-4 text-slate-700/50 sm:text-slate-800/30 text-2xl sm:text-5xl">
+                        <i class="fa-solid fa-route"></i>
+                    </div>
+                    <div>
+                        <span class="text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-slate-400">Interações Totais</span>
+                        <div class="flex items-baseline space-x-2 mt-0.5 sm:mt-2">
+                            <span class="text-2xl sm:text-4xl font-extrabold text-white">106</span>
+                            <span class="text-[10px] sm:text-xs bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded-full font-mono">19.5% conv.</span>
+                        </div>
+                    </div>
                 </div>
-                <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Interações Totais</span>
-                <div class="flex items-baseline space-x-2 mt-2">
-                    <span class="text-4xl font-extrabold text-white">106</span>
-                    <span class="text-xs bg-emerald-500/10 text-emerald-400 px-2 py-0.5 rounded-full font-mono">19.5% conv.</span>
-                </div>
-                <p class="text-xs text-slate-500 mt-2">Clientes que ligaram, traçaram rotas, abriram o site ou iniciaram conversas no WhatsApp.</p>
+                <p class="hidden md:block text-xs text-slate-500 mt-2">Clientes que ligaram, traçaram rotas, abriram o site ou usaram o WhatsApp.</p>
             </div>
 
             <!-- Card 3: Total de Avaliações -->
-            <div class="bg-gradient-to-br from-slate-950 to-slate-900 border border-slate-800 rounded-xl p-6 shadow-xl relative overflow-hidden">
-                <div class="absolute right-4 top-4 text-slate-800/30 text-5xl">
-                    <i class="fa-solid fa-star"></i>
+            <div class="bg-gradient-to-br from-slate-950 to-slate-900 border border-slate-800 rounded-xl p-4 sm:p-6 shadow-xl relative overflow-hidden flex flex-row sm:flex-col justify-between items-center sm:items-start gap-4">
+                <div class="flex items-center sm:block gap-3">
+                    <div class="sm:absolute sm:right-4 sm:top-4 text-slate-700/50 sm:text-slate-800/30 text-2xl sm:text-5xl">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div>
+                        <span class="text-[10px] sm:text-xs font-semibold uppercase tracking-wider text-slate-400">Total de Avaliações</span>
+                        <div class="flex items-baseline space-x-2 mt-0.5 sm:mt-2">
+                            <span class="text-2xl sm:text-4xl font-extrabold text-white">104</span>
+                            <span class="text-[10px] sm:text-xs text-amber-400 font-semibold"><i class="fa-solid fa-star"></i> 4.7 Média</span>
+                        </div>
+                    </div>
                 </div>
-                <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Total de Avaliações</span>
-                <div class="flex items-baseline space-x-2 mt-2">
-                    <span class="text-4xl font-extrabold text-white">104</span>
-                    <span class="text-xs text-amber-400 font-semibold"><i class="fa-solid fa-star"></i> 4.7 Média</span>
-                </div>
-                <p class="text-xs text-slate-500 mt-2">Média histórica acumulada. Recomendado manter ritmo frequente de feedbacks.</p>
+                <p class="hidden md:block text-xs text-slate-500 mt-2">Média histórica acumulada. Recomendado manter ritmo constante.</p>
             </div>
         </div>
 
         <!-- SEÇÃO DE COMPOSIÇÃO DE TRÁFEGO E PALAVRAS-CHAVE -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8">
             <!-- Gráficos de Origem (Esquerda) -->
-            <div class="lg:col-span-8 bg-slate-950 border border-slate-800 rounded-xl p-6 shadow-xl space-y-6">
+            <div class="lg:col-span-8 bg-slate-950 border border-slate-800 rounded-xl p-4 sm:p-6 shadow-xl space-y-6">
                 <div>
-                    <h3 class="text-base font-bold text-white flex items-center gap-2">
+                    <h3 class="text-sm sm:text-base font-bold text-white flex items-center gap-2">
                         <i class="fa-solid fa-chart-pie text-brand-orange"></i> Origem de Pesquisa e Visualizações
                     </h3>
                     <p class="text-xs text-slate-400">Como os clientes encontraram a Pablo Motos no Google</p>
@@ -107,7 +119,7 @@
                     <!-- Progresso 1 -->
                     <div>
                         <div class="flex justify-between text-xs font-semibold mb-1">
-                            <span class="text-slate-300"><i class="fa-solid fa-mobile-screen text-slate-500 mr-2"></i>Pesquisa Google (Dispositivo Móvel)</span>
+                            <span class="text-slate-300 flex items-center gap-1.5"><i class="fa-solid fa-mobile-screen text-slate-500"></i>Pesquisa Google (Móvel)</span>
                             <span class="text-white">260 <span class="text-slate-500 font-normal">(47.9%)</span></span>
                         </div>
                         <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
@@ -118,7 +130,7 @@
                     <!-- Progresso 2 -->
                     <div>
                         <div class="flex justify-between text-xs font-semibold mb-1">
-                            <span class="text-slate-300"><i class="fa-solid fa-map-location-dot text-slate-500 mr-2"></i>Google Maps (Dispositivo Móvel)</span>
+                            <span class="text-slate-300 flex items-center gap-1.5"><i class="fa-solid fa-map-location-dot text-slate-500"></i>Google Maps (Móvel)</span>
                             <span class="text-white">191 <span class="text-slate-500 font-normal">(35.2%)</span></span>
                         </div>
                         <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
@@ -129,7 +141,7 @@
                     <!-- Progresso 3 -->
                     <div>
                         <div class="flex justify-between text-xs font-semibold mb-1">
-                            <span class="text-slate-300"><i class="fa-solid fa-desktop text-slate-500 mr-2"></i>Pesquisa Google (Computador)</span>
+                            <span class="text-slate-300 flex items-center gap-1.5"><i class="fa-solid fa-desktop text-slate-500"></i>Pesquisa Google (Desktop)</span>
                             <span class="text-white">55 <span class="text-slate-500 font-normal">(10.1%)</span></span>
                         </div>
                         <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
@@ -140,7 +152,7 @@
                     <!-- Progresso 4 -->
                     <div>
                         <div class="flex justify-between text-xs font-semibold mb-1">
-                            <span class="text-slate-300"><i class="fa-solid fa-map text-slate-500 mr-2"></i>Google Maps (Computador)</span>
+                            <span class="text-slate-300 flex items-center gap-1.5"><i class="fa-solid fa-map text-slate-500"></i>Google Maps (Desktop)</span>
                             <span class="text-white">37 <span class="text-slate-500 font-normal">(6.8%)</span></span>
                         </div>
                         <div class="w-full bg-slate-800 h-2 rounded-full overflow-hidden">
@@ -151,12 +163,12 @@
             </div>
 
             <!-- Palavras-chave mais buscadas (Direita) -->
-            <div class="lg:col-span-4 bg-slate-950 border border-slate-800 rounded-xl p-6 shadow-xl flex flex-col justify-between">
+            <div class="lg:col-span-4 bg-slate-950 border border-slate-800 rounded-xl p-4 sm:p-6 shadow-xl flex flex-col justify-between gap-6">
                 <div>
-                    <h3 class="text-base font-bold text-white flex items-center gap-2 mb-1">
+                    <h3 class="text-sm sm:text-base font-bold text-white flex items-center gap-2 mb-1">
                         <i class="fa-solid fa-magnifying-glass text-brand-orange"></i> Principais Termos
                     </h3>
-                    <p class="text-xs text-slate-400 mb-6">Palavras-chave mais digitadas pelos clientes</p>
+                    <p class="text-xs text-slate-400 mb-4 sm:mb-6">Palavras-chave mais digitadas pelos clientes</p>
 
                     <div class="space-y-3">
                         <div class="bg-slate-900 border border-slate-800 p-2.5 rounded-lg flex items-center justify-between">
@@ -174,7 +186,7 @@
                     </div>
                 </div>
 
-                <div class="mt-6 bg-brand-orange/10 border border-brand-orange/20 p-4 rounded-lg">
+                <div class="bg-brand-orange/10 border border-brand-orange/20 p-4 rounded-lg">
                     <p class="text-[11px] text-slate-300 leading-relaxed">
                         <strong class="text-brand-orange">SEO Local:</strong> A busca por <strong class="text-white">"oficina de moto sjc"</strong> lidera o tráfego. Mantenha atualizações constantes para reforçar esse termo no Google.
                     </p>
@@ -183,77 +195,77 @@
         </div>
 
         <!-- TABELA DE INTERAÇÕES E CONVERSÕES -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8">
             <!-- Tabela de Ações (Esquerda) -->
-            <div class="lg:col-span-8 bg-slate-950 border border-slate-800 rounded-xl p-6 shadow-xl">
+            <div class="lg:col-span-8 bg-slate-950 border border-slate-800 rounded-xl p-4 sm:p-6 shadow-xl">
                 <div>
-                    <h3 class="text-base font-bold text-white flex items-center gap-2 mb-1">
+                    <h3 class="text-sm sm:text-base font-bold text-white flex items-center gap-2 mb-1">
                         <i class="fa-solid fa-bolt text-brand-orange"></i> Ações Realizadas pelos Clientes
                     </h3>
                     <p class="text-xs text-slate-400 mb-6">Detalhamento dos eventos de conversão de clientes</p>
                 </div>
 
                 <div class="overflow-x-auto">
-                    <table class="w-full text-left text-sm">
+                    <table class="w-full text-left text-sm whitespace-nowrap sm:whitespace-normal">
                         <thead>
                             <tr class="border-b border-slate-800 text-slate-400 text-xs uppercase tracking-wider">
                                 <th class="pb-3 font-semibold">Tipo de Interação</th>
-                                <th class="pb-3 font-semibold text-center">Cliques / Solicitações</th>
-                                <th class="pb-3 font-semibold text-right">Avaliação de Impacto</th>
+                                <th class="pb-3 font-semibold text-center px-4">Cliques</th>
+                                <th class="pb-3 font-semibold text-right">Impacto</th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-slate-800/50">
                             <tr>
-                                <td class="py-4 flex items-center gap-3">
+                                <td class="py-3 sm:py-4 flex items-center gap-3">
                                     <div class="p-2 bg-emerald-500/10 text-emerald-400 rounded-lg text-xs">
                                         <i class="fa-solid fa-diamond-turn-right"></i>
                                     </div>
                                     <div>
                                         <p class="font-bold text-white text-sm">Solicitações de Rota</p>
-                                        <p class="text-[11px] text-slate-500">Traçaram rota no GPS para a oficina</p>
+                                        <p class="text-[11px] text-slate-550 hidden sm:block">Traçaram rota no GPS para a oficina</p>
                                     </div>
                                 </td>
-                                <td class="py-4 text-center font-extrabold text-white">79</td>
-                                <td class="py-4 text-right text-emerald-400 text-xs font-semibold">Crítico / Muito Alto <i class="fa-solid fa-circle-check ml-1"></i></td>
+                                <td class="py-3 sm:py-4 text-center font-extrabold text-white px-4">79</td>
+                                <td class="py-3 sm:py-4 text-right text-emerald-400 text-xs font-semibold">Crítico <i class="fa-solid fa-circle-check ml-1"></i></td>
                             </tr>
                             <tr>
-                                <td class="py-4 flex items-center gap-3">
+                                <td class="py-3 sm:py-4 flex items-center gap-3">
                                     <div class="p-2 bg-blue-500/10 text-blue-400 rounded-lg text-xs">
                                         <i class="fa-solid fa-phone"></i>
                                     </div>
                                     <div>
                                         <p class="font-bold text-white text-sm">Cliques para Ligar</p>
-                                        <p class="text-[11px] text-slate-500">Tentativa de contato via telefone cadastrado</p>
+                                        <p class="text-[11px] text-slate-550 hidden sm:block">Tentativa de contato via telefone cadastrado</p>
                                     </div>
                                 </td>
-                                <td class="py-4 text-center font-extrabold text-white">23</td>
-                                <td class="py-4 text-right text-blue-400 text-xs font-semibold">Muito Alto <i class="fa-solid fa-circle-check ml-1"></i></td>
+                                <td class="py-3 sm:py-4 text-center font-extrabold text-white px-4">23</td>
+                                <td class="py-3 sm:py-4 text-right text-blue-400 text-xs font-semibold">Muito Alto <i class="fa-solid fa-circle-check ml-1"></i></td>
                             </tr>
                             <tr>
-                                <td class="py-4 flex items-center gap-3">
+                                <td class="py-3 sm:py-4 flex items-center gap-3">
                                     <div class="p-2 bg-purple-500/10 text-purple-400 rounded-lg text-xs">
                                         <i class="fa-solid fa-globe"></i>
                                     </div>
                                     <div>
                                         <p class="font-bold text-white text-sm">Cliques no Site</p>
-                                        <p class="text-[11px] text-slate-500">Abriram a página web da oficina</p>
+                                        <p class="text-[11px] text-slate-550 hidden sm:block">Abriram a página web da oficina</p>
                                     </div>
                                 </td>
-                                <td class="py-4 text-center font-extrabold text-white">4</td>
-                                <td class="py-4 text-right text-slate-400 text-xs">Médio</td>
+                                <td class="py-3 sm:py-4 text-center font-extrabold text-white px-4">4</td>
+                                <td class="py-3 sm:py-4 text-right text-slate-400 text-xs">Médio</td>
                             </tr>
                             <tr>
-                                <td class="py-4 flex items-center gap-3">
+                                <td class="py-3 sm:py-4 flex items-center gap-3">
                                     <div class="p-2 bg-emerald-500/10 text-emerald-400 rounded-lg text-xs">
                                         <i class="fa-brands fa-whatsapp text-sm"></i>
                                     </div>
                                     <div>
                                         <p class="font-bold text-white text-sm">Cliques no WhatsApp</p>
-                                        <p class="text-[11px] text-slate-500">Conversas diretas iniciadas no perfil</p>
+                                        <p class="text-[11px] text-slate-550 hidden sm:block">Conversas diretas iniciadas no perfil</p>
                                     </div>
                                 </td>
-                                <td class="py-4 text-center font-extrabold text-white">0</td>
-                                <td class="py-4 text-right text-slate-500 text-xs">Baixo (Estimular)</td>
+                                <td class="py-3 sm:py-4 text-center font-extrabold text-white px-4">0</td>
+                                <td class="py-3 sm:py-4 text-right text-slate-500 text-xs">Baixo</td>
                             </tr>
                         </tbody>
                     </table>
@@ -261,9 +273,9 @@
             </div>
 
             <!-- Recomendação Estratégica de Avaliações (Direita) -->
-            <div class="lg:col-span-4 bg-gradient-to-br from-amber-500/10 to-transparent border border-amber-500/20 rounded-xl p-6 shadow-xl flex flex-col justify-between">
+            <div class="lg:col-span-4 bg-gradient-to-br from-amber-500/10 to-transparent border border-amber-500/20 rounded-xl p-4 sm:p-6 shadow-xl flex flex-col justify-between gap-6">
                 <div>
-                    <h3 class="text-base font-bold text-white flex items-center gap-2 mb-2">
+                    <h3 class="text-sm sm:text-base font-bold text-white flex items-center gap-2 mb-2">
                         <i class="fa-solid fa-ranking-star text-amber-500"></i> Plano de Relevância Local
                     </h3>
                     <p class="text-xs text-slate-300 leading-relaxed font-light mb-4">
@@ -273,7 +285,7 @@
                         Para o algoritmo do Google continuar ranqueando bem a oficina na região, <strong class="text-white">é recomendado manter um fluxo constante de recebimento de novas avaliações toda semana</strong>.
                     </p>
                 </div>
-                <div class="mt-6 bg-slate-900/50 p-4 rounded-lg border border-slate-800">
+                <div class="bg-slate-900/50 p-4 rounded-lg border border-slate-800">
                     <p class="text-[11px] text-slate-400">
                         <strong>Ação prática:</strong> Forneça um QR Code no balcão de atendimento para incentivar avaliações semanais rápidas dos clientes após os serviços.
                     </p>
@@ -284,7 +296,7 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-slate-950 border-t border-slate-850 py-8 mt-12 text-center text-slate-600 space-y-1">
+    <footer class="bg-slate-950 border-t border-slate-850 py-6 sm:py-8 mt-12 text-center text-slate-600 space-y-1">
         <p class="text-xs">Relatório de Desempenho Local — Desenvolvido via Google Business Profile API.</p>
         <p class="text-[10px]">&copy; 2026 Pablo Motos Oficina. Painel Interno de Insights.</p>
     </footer>
