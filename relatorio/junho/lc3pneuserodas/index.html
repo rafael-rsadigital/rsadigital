@@ -1,0 +1,304 @@
+=<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório Executivo - LC3 Pneus e Rodas</title>
+    <!-- Tailwind CSS para estilização moderna e limpa -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            body {
+                background-color: white !important;
+                color: #0f172a !important;
+            }
+            .print-card {
+                background-color: #f8fafc !important;
+                border: 1px solid #e2e8f0 !important;
+                color: #0f172a !important;
+            }
+            .text-light-print {
+                color: #1e293b !important;
+            }
+            .text-muted-print {
+                color: #475569 !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen selection:bg-amber-500 selection:text-slate-950">
+
+    <!-- Wrapper Principal -->
+    <div class="flex flex-col min-h-screen">
+        
+        <!-- Cabeçalho Principal -->
+        <header class="border-b border-slate-800 bg-slate-900/50 backdrop-blur-md">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+                <!-- Branding -->
+                <div class="flex items-center gap-3">
+                    <div class="h-9 w-9 rounded-lg bg-amber-500 flex items-center justify-center text-slate-950 font-bold">
+                        LC3
+                    </div>
+                    <div>
+                        <h1 class="text-base font-bold text-white tracking-tight">
+                            LC3 Pneus e Rodas
+                        </h1>
+                        <p class="text-xs text-slate-400">Oficina Mecânica & Centro Automotivo</p>
+                    </div>
+                </div>
+
+                <!-- Info do Relatório -->
+                <div class="text-right">
+                    <p class="text-xs font-semibold text-amber-500 uppercase tracking-wider">Relatório de SEO Local</p>
+                    <p class="text-[11px] text-slate-400">São José dos Campos - SP</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Conteúdo Principal -->
+        <main class="flex-grow max-w-6xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+            
+            <!-- Introdução Executiva -->
+            <div class="p-6 bg-slate-900/30 rounded-2xl border border-slate-800/80">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                    <div>
+                        <h2 class="text-lg font-bold text-white mb-1">Diagnóstico de Desempenho Local</h2>
+                        <p class="text-xs text-slate-400 leading-relaxed max-w-3xl">
+                            Este documento consolida as principais métricas de visualização, comportamento de pesquisa de usuários e engajamento orgânico do Perfil da Empresa no Google. O objetivo é mapear o posicionamento atual e direcionar as melhores práticas de manutenção de autoridade local.
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="text-xs text-slate-400 bg-slate-800/40 px-3 py-1.5 rounded-lg border border-slate-700/50 flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+                            <span>Junho de 2026</span>
+                        </div>
+                        <button onclick="window.print()" class="no-print text-xs bg-slate-800 hover:bg-slate-700 text-slate-200 px-4 py-2 rounded-lg border border-slate-700 transition-all font-medium">
+                            🖨️ Imprimir Relatório
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bloco 1: Visão Geral de Métricas (KPIs) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                
+                <div class="print-card bg-slate-900/40 p-5 rounded-xl border border-slate-800/60">
+                    <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider mb-1">Alcance do Perfil</p>
+                    <h3 class="text-2xl font-bold text-white">430</h3>
+                    <p class="text-[11px] text-slate-400 mt-1">Pessoas visualizaram a empresa</p>
+                </div>
+
+                <div class="print-card bg-slate-900/40 p-5 rounded-xl border border-slate-800/60">
+                    <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider mb-1">Acessos Mobile</p>
+                    <h3 class="text-2xl font-bold text-amber-500">78%</h3>
+                    <p class="text-[11px] text-slate-400 mt-1">Celulares (Maps e Pesquisa)</p>
+                </div>
+
+                <div class="print-card bg-slate-900/40 p-5 rounded-xl border border-slate-800/60">
+                    <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider mb-1">Novos Comentários</p>
+                    <h3 class="text-2xl font-bold text-white">+6</h3>
+                    <p class="text-[11px] text-slate-400 mt-1">Avaliações recebidas no mês</p>
+                </div>
+
+                <div class="print-card bg-slate-900/40 p-5 rounded-xl border border-slate-800/60">
+                    <p class="text-[11px] font-semibold text-slate-400 uppercase tracking-wider mb-1">Serviço de Destaque</p>
+                    <h3 class="text-2xl font-bold text-white">Borracharia</h3>
+                    <p class="text-[11px] text-slate-400 mt-1">Maior volume de buscas</p>
+                </div>
+
+            </div>
+
+            <!-- Bloco 2: Análise de Dispositivos & Plataformas -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                
+                <div class="print-card lg:col-span-2 bg-slate-900/20 p-6 rounded-2xl border border-slate-800/60 space-y-4">
+                    <div>
+                        <h3 class="text-sm font-bold text-white uppercase tracking-wider">Origem das Visualizações</h3>
+                        <p class="text-xs text-slate-400">Distribuição exata do tráfego entre plataformas oficiais</p>
+                    </div>
+
+                    <div class="space-y-4 pt-2">
+                        <!-- Maps Mobile -->
+                        <div>
+                            <div class="flex justify-between text-xs mb-1">
+                                <span class="text-slate-300">Google Maps (Celular)</span>
+                                <span class="font-bold text-slate-200">207 acessos (48%)</span>
+                            </div>
+                            <div class="w-full bg-slate-800/50 h-2 rounded-full overflow-hidden">
+                                <div class="bg-amber-500 h-full rounded-full" style="width: 48%"></div>
+                            </div>
+                        </div>
+
+                        <!-- Pesquisa Mobile -->
+                        <div>
+                            <div class="flex justify-between text-xs mb-1">
+                                <span class="text-slate-300">Pesquisa Google (Celular)</span>
+                                <span class="font-bold text-slate-200">131 acessos (30%)</span>
+                            </div>
+                            <div class="w-full bg-slate-800/50 h-2 rounded-full overflow-hidden">
+                                <div class="bg-amber-500/80 h-full rounded-full" style="width: 30%"></div>
+                            </div>
+                        </div>
+
+                        <!-- Pesquisa Desktop -->
+                        <div>
+                            <div class="flex justify-between text-xs mb-1">
+                                <span class="text-slate-300">Pesquisa Google (Computadores)</span>
+                                <span class="font-bold text-slate-200">58 acessos (13%)</span>
+                            </div>
+                            <div class="w-full bg-slate-800/50 h-2 rounded-full overflow-hidden">
+                                <div class="bg-slate-700 h-full rounded-full" style="width: 13%"></div>
+                            </div>
+                        </div>
+
+                        <!-- Maps Desktop -->
+                        <div>
+                            <div class="flex justify-between text-xs mb-1">
+                                <span class="text-slate-300">Google Maps (Computadores)</span>
+                                <span class="font-bold text-slate-200">34 acessos (8%)</span>
+                            </div>
+                            <div class="w-full bg-slate-800/50 h-2 rounded-full overflow-hidden">
+                                <div class="bg-slate-700 h-full rounded-full" style="width: 8%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="print-card bg-slate-900/20 p-6 rounded-2xl border border-slate-800/60 flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-sm font-bold text-white uppercase tracking-wider mb-2">Comportamento de Dispositivo</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Cerca de <strong>78% dos usuários</strong> encontraram a oficina usando celulares. Esse perfil de público geralmente tem maior pressa ou necessita de contato imediato.
+                        </p>
+                    </div>
+                    <div class="border-t border-slate-800/80 pt-4 mt-4">
+                        <span class="text-[10px] text-slate-500 uppercase font-semibold">Análise de Canal</span>
+                        <p class="text-xs text-slate-300 mt-1">A combinação Maps + Celular lidera de forma absoluta, indicando forte presença de pesquisas locais em trânsito.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bloco 3: Tabela de Palavras-Chave (SEO Local) -->
+            <div class="print-card bg-slate-900/20 p-6 rounded-2xl border border-slate-800/60">
+                <div class="mb-4">
+                    <h3 class="text-sm font-bold text-white uppercase tracking-wider">Principais Termos de Pesquisa</h3>
+                    <p class="text-xs text-slate-400">Palavras-chave que levaram o público até o perfil da LC3 no Google</p>
+                </div>
+
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-xs">
+                        <thead>
+                            <tr class="border-b border-slate-800/80 text-slate-400 uppercase font-semibold">
+                                <th class="py-2.5 px-3">Palavra-Chave / Termo</th>
+                                <th class="py-2.5 px-3 text-center">Volume de Busca</th>
+                                <th class="py-2.5 px-3">Classificação e Tipo de Intenção</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-800/40 text-slate-300">
+                            <tr>
+                                <td class="py-3 px-3 font-semibold text-white">borracharia</td>
+                                <td class="py-3 px-3 text-center font-bold">58</td>
+                                <td class="py-3 px-3"><span class="text-red-400 font-medium">Urgência Mecânica / Busca Imediata</span></td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-3 font-semibold text-white">pneus</td>
+                                <td class="py-3 px-3 text-center font-bold">20</td>
+                                <td class="py-3 px-3"><span class="text-blue-400 font-medium">Pesquisa de Compra / Comparação</span></td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-3 font-semibold text-white">borracharia perto de mim</td>
+                                <td class="py-3 px-3 text-center font-bold">19</td>
+                                <td class="py-3 px-3"><span class="text-red-400 font-medium">Pesquisa de Conveniência Geográfica</span></td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-3 text-slate-400">alinhamento e balanceamento</td>
+                                <td class="py-3 px-3 text-center font-bold">&lt; 15</td>
+                                <td class="py-3 px-3"><span class="text-emerald-400 font-medium">Manutenção Preventiva</span></td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-3 text-slate-400">lc3 / lc3 sjc</td>
+                                <td class="py-3 px-3 text-center font-bold">&lt; 15</td>
+                                <td class="py-3 px-3"><span class="text-purple-400 font-medium">Navegação Direta / Força de Marca</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Bloco 4: Diagnóstico de Engajamento & Oportunidade -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                
+                <div class="print-card bg-slate-900/20 p-6 rounded-2xl border border-slate-800/60 space-y-4">
+                    <h3 class="text-sm font-bold text-white uppercase tracking-wider">Desempenho de Mídias e Atualizações</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        O perfil mantém uma excelente constância no envio de mídias e fotos reais do dia a dia da oficina. Esse dinamismo demonstra ao algoritmo do Google que a empresa está ativa e confere segurança aos usuários que buscam por soluções mecânicas confiáveis.
+                    </p>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        A inclusão contínua de fotos originais de reformas de rodas, montagem de pneus e diagnósticos de suspensão ajuda a fixar o diferencial técnico da LC3 em relação aos concorrentes de São José dos Campos.
+                    </p>
+                </div>
+
+                <div class="print-card bg-slate-900/20 p-6 rounded-2xl border border-slate-800/60 space-y-4">
+                    <h3 class="text-sm font-bold text-white uppercase tracking-wider">Aproveitamento do Fluxo de Caixa</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Foram captadas **6 novas avaliações no mês**. Embora seja um saldo positivo que ajuda a consolidar a nota máxima, o volume de atendimentos mecânicos e de borracharia diários abre espaço para um aproveitamento muito maior.
+                    </p>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Atualmente, grande parte das avaliações ocorre espontaneamente ou através de estímulos pontuais e informais. A estruturação de uma abordagem de incentivo padronizada e ativa no fechamento das ordens de serviço tem o potencial de triplicar essa taxa de captação, impulsionando ainda mais a autoridade da marca no Google.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Bloco 5: Recomendações Estratégicas (Plano de Ação) -->
+            <div class="print-card bg-slate-900/30 p-6 rounded-2xl border border-slate-800/80">
+                <h3 class="text-sm font-bold text-white uppercase tracking-wider mb-4">Plano de Ação Recomendado</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    
+                    <div class="space-y-1">
+                        <div class="text-amber-500 font-bold text-sm">01. Conteúdo Original e Frequência</div>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Manter a agenda de mídias atualizadas. Utilizar imagens próprias e de alta resolução que ilustrem a infraestrutura, a qualidade das ferramentas e o cuidado no manuseio de rodas de liga leve.
+                        </p>
+                    </div>
+
+                    <div class="space-y-1">
+                        <div class="text-amber-500 font-bold text-sm">02. Estímulo Ativo a Avaliações</div>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Facilitar o acesso ao canal de opiniões. Recomenda-se criar um QR Code simples para o balcão de entrega dos veículos ou enviar o link direto de feedback via WhatsApp na finalização do serviço.
+                        </p>
+                    </div>
+
+                    <div class="space-y-1">
+                        <div class="text-amber-500 font-bold text-sm">03. Respostas e Interação</div>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Responder a todas as avaliações recebidas no canal de forma atenciosa e ágil. Essa interação demonstra comprometimento com a satisfação do cliente e fortalece a credibilidade do atendimento da oficina.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Rodapé -->
+        <footer class="border-t border-slate-900 bg-slate-950 py-6 text-center text-[10px] text-slate-500">
+            <div class="max-w-6xl mx-auto px-4">
+                <p>© 2026 LC3 Pneus e Rodas | Relatório Informativo de Visibilidade Local</p>
+                <p class="mt-1">Documento gerado com base nas métricas oficiais consolidadas.</p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
