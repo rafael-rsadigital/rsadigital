@@ -6,214 +6,391 @@
 
 <title>Relatório de Gerenciamento | LC3 Pneus e Rodas</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-    margin:0;
-    background:#f5f7fb;
-    font-family:Arial,Helvetica,sans-serif;
-    color:#2b2b2b;
+
+font-family:'Inter',sans-serif;
+background:#f5f7fb;
+color:#1d2939;
+line-height:1.6;
+
 }
 
 .container{
-    max-width:900px;
-    margin:auto;
-    padding:40px 20px;
+
+max-width:760px;
+margin:auto;
+padding:25px 18px 80px;
+
+}
+
+.hero{
+
+background:linear-gradient(135deg,#0057b8,#0b7cff);
+
+color:#fff;
+
+padding:35px 28px;
+
+border-radius:22px;
+
+box-shadow:0 18px 40px rgba(0,0,0,.18);
+
+margin-bottom:24px;
+
+}
+
+.hero img{
+
+height:52px;
+margin-bottom:18px;
+
+}
+
+.hero h1{
+
+font-size:30px;
+font-weight:800;
+margin-bottom:10px;
+
+}
+
+.hero p{
+
+opacity:.95;
+
+}
+
+.periodo{
+
+display:inline-block;
+
+margin-top:18px;
+
+background:rgba(255,255,255,.18);
+
+padding:8px 15px;
+
+border-radius:999px;
+
+font-size:14px;
+
 }
 
 .card{
-    background:#fff;
-    border-radius:16px;
-    padding:35px;
-    margin-bottom:25px;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+background:#fff;
+
+border-radius:18px;
+
+padding:24px;
+
+margin-bottom:18px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.07);
+
 }
 
-h1{
-    margin-top:0;
-    color:#003b7a;
+.card h2{
+
+font-size:21px;
+
+margin-bottom:16px;
+
+color:#0057b8;
+
 }
 
-h2{
-    color:#003b7a;
-    border-left:5px solid #0d6efd;
-    padding-left:12px;
+.grid{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:14px;
+
 }
 
-.ok{
-    color:#1b8a3b;
-    font-weight:bold;
+.item{
+
+background:#f8fafc;
+
+padding:16px;
+
+border-radius:14px;
+
+}
+
+.item strong{
+
+display:block;
+
+margin-bottom:6px;
+
 }
 
 ul{
-    line-height:1.8;
+
+padding-left:20px;
+
 }
 
-.alerta{
-    background:#eef6ff;
-    border-left:5px solid #0d6efd;
-    padding:20px;
-    border-radius:10px;
+li{
+
+margin-bottom:10px;
+
 }
 
-.futuro{
-    background:#fff9eb;
-    border-left:5px solid #ffc107;
-    padding:20px;
-    border-radius:10px;
+.ia{
+
+background:#eef6ff;
+
+border:1px solid #d6e8ff;
+
+}
+
+.ia img{
+
+width:100%;
+
+border-radius:14px;
+
+margin-top:18px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+
+}
+
+blockquote{
+
+margin-top:18px;
+
+background:#fff;
+
+border-left:4px solid #0b7cff;
+
+padding:15px;
+
+border-radius:10px;
+
+font-style:italic;
+
+}
+
+.cta{
+
+background:linear-gradient(135deg,#0f172a,#1e293b);
+
+color:#fff;
+
+}
+
+.cta h2{
+
+color:#fff;
+
 }
 
 footer{
-    text-align:center;
-    color:#777;
-    margin-top:40px;
+
+text-align:center;
+
+font-size:14px;
+
+color:#667085;
+
+margin-top:35px;
+
 }
+
+@media(max-width:700px){
+
+.hero h1{
+
+font-size:24px;
+
+}
+
+.grid{
+
+grid-template-columns:1fr;
+
+}
+
+.card{
+
+padding:20px;
+
+}
+
+}
+
 </style>
 
 </head>
+
 <body>
 
 <div class="container">
 
-<div class="card">
+<section class="hero">
 
-<h1>Relatório de Gerenciamento do Perfil no Google</h1>
+<!-- opcional -->
+<!-- <img src="images/logo.png"> -->
 
-<p><strong>Empresa:</strong> LC3 Pneus e Rodas</p>
+<h1>Relatório de Gerenciamento</h1>
 
-<p><strong>Período:</strong> ____________________</p>
+<p><strong>LC3 Pneus e Rodas</strong></p>
 
-<p>
-Este relatório resume as principais ações realizadas durante o período de gerenciamento do Perfil da Empresa no Google e apresenta recomendações para manter o crescimento da presença digital da empresa.
-</p>
+<span class="periodo">Janeiro • Julho de 2026</span>
+
+</section>
+
+<section class="card">
+
+<h2>✅ O que foi realizado</h2>
+
+<div class="grid">
+
+<div class="item">
+<strong>Publicações</strong>
+Postagens frequentes com textos estratégicos para fortalecer a presença da empresa no Google.
+</div>
+
+<div class="item">
+<strong>Galeria</strong>
+Atualização constante com fotos e vídeos enviados pela equipe.
+</div>
+
+<div class="item">
+<strong>SEO Local</strong>
+Otimização das palavras-chave e dos serviços oferecidos.
+</div>
+
+<div class="item">
+<strong>Acompanhamento</strong>
+Monitoramento contínuo da evolução do perfil e das oportunidades de posicionamento.
+</div>
 
 </div>
 
-<div class="card">
+</section>
 
-<h2>O que foi realizado</h2>
+<section class="card">
+
+<h2>📈 Resultados alcançados</h2>
 
 <ul>
 
-<li class="ok">✔ Publicações frequentes no Perfil da Empresa</li>
+<li>O perfil passou a ser exibido para pesquisas relacionadas a <strong>alinhamento e balanceamento</strong>.</li>
 
-<li class="ok">✔ Produção de textos com foco em SEO Local</li>
+<li>Fortalecimento da presença nas buscas por <strong>borracharia</strong> e <strong>pneus</strong>.</li>
 
-<li class="ok">✔ Organização e atualização da galeria de fotos e vídeos</li>
+<li>Maior quantidade de conteúdo publicado na galeria, aumentando a relevância do perfil.</li>
 
-<li class="ok">✔ Otimização dos serviços cadastrados</li>
-
-<li class="ok">✔ Estratégia de palavras-chave</li>
-
-<li class="ok">✔ Acompanhamento da visibilidade do perfil</li>
+<li>Construção de uma presença digital mais consistente ao longo dos últimos meses.</li>
 
 </ul>
 
-</div>
+</section>
 
-<div class="card">
+<section class="card ia">
 
-<h2>Resultados observados</h2>
+<h2>🤖 As buscas estão mudando</h2>
+
+<p>
+
+Hoje muitas pessoas já pesquisam utilizando Inteligência Artificial em vez de apenas digitar palavras-chave.
+
+</p>
+
+<blockquote>
+
+"Onde encontro uma borracharia honesta?"
+
+<br><br>
+
+"Qual oficina é confiável para trocar pneus?"
+
+<br><br>
+
+"Onde fazer alinhamento e balanceamento perto de mim?"
+
+</blockquote>
+
+<p style="margin-top:20px;">
+
+Durante os testes realizados, a <strong>LC3 Pneus e Rodas</strong> já aparece como recomendação para esse tipo de pesquisa, mostrando que o trabalho desenvolvido fortalece a empresa também nas novas formas de busca.
+
+</p>
+
+<img src="images/print-busca.JPG" alt="Pesquisa por IA">
+
+</section>
+
+<section class="card">
+
+<h2>🎯 Recomendações</h2>
 
 <ul>
 
-<li>O perfil passou a aparecer para pesquisas relacionadas a <strong>Alinhamento e Balanceamento</strong>.</li>
+<li>Responder rapidamente às avaliações recebidas.</li>
 
-<li>Crescimento da relevância para buscas envolvendo <strong>borracharia</strong> e <strong>pneus</strong>.</li>
+<li>Continuar alimentando a galeria com fotos e vídeos reais da oficina.</li>
 
-<li>Maior volume de conteúdo publicado, fortalecendo a autoridade do perfil perante o Google.</li>
+<li>Publicar novidades e serviços regularmente.</li>
 
-<li>Melhoria na cobertura de diferentes serviços oferecidos pela empresa.</li>
+<li>Continuar trabalhando palavras-chave conforme os serviços oferecidos.</li>
 
-</ul>
-
-</div>
-
-<div class="card">
-
-<h2>O cenário está mudando</h2>
-
-<div class="futuro">
-
-<p>
-O comportamento dos usuários está evoluindo rapidamente.
-</p>
-
-<p>
-Além das pesquisas tradicionais no Google, cada vez mais pessoas utilizam Inteligência Artificial para encontrar empresas locais.
-</p>
-
-<p>
-Em vez de pesquisar apenas <strong>"borracharia"</strong>, hoje muitos usuários fazem perguntas como:
-</p>
-
-<ul>
-
-<li>"Onde tem uma borracharia honesta?"</li>
-
-<li>"Qual oficina atende mulheres?"</li>
-
-<li>"Onde fazer alinhamento e balanceamento perto de mim?"</li>
+<li>Acompanhar as constantes mudanças do Google e da Inteligência Artificial.</li>
 
 </ul>
 
-<p>
-Durante nossos testes, a <strong>LC3 Pneus e Rodas</strong> já aparece como recomendação para esse tipo de pesquisa, demonstrando que o trabalho realizado também fortalece a presença da empresa nas novas formas de busca.
+</section>
 
-</p>
+<section class="card cta">
 
-<p><em>(Inserir print da pesquisa aqui)</em></p>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<h2>Recomendações</h2>
-
-<div class="alerta">
-
-<ul>
-
-<li>Responder rapidamente às avaliações dos clientes.</li>
-
-<li>Continuar adicionando fotos e vídeos reais da oficina.</li>
-
-<li>Publicar novidades e serviços com frequência.</li>
-
-<li>Atualizar conteúdos utilizando palavras-chave relacionadas aos principais serviços.</li>
-
-<li>Acompanhar as mudanças constantes do Google e da Inteligência Artificial.</li>
-
-</ul>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<h2>Considerações finais</h2>
+<h2>Próxima etapa</h2>
 
 <p>
 
-Durante o período de gerenciamento foi possível fortalecer significativamente a presença digital da LC3 Pneus e Rodas.
-
-O posicionamento no Google, entretanto, é um trabalho contínuo. Empresas que mantêm atualizações frequentes, conteúdo relevante e acompanhamento estratégico tendem a preservar e ampliar sua visibilidade ao longo do tempo.
+Durante o período de gerenciamento foi construída uma base sólida para fortalecer a presença da LC3 Pneus e Rodas no Google.
 
 </p>
+
+<br>
 
 <p>
 
-Caso haja interesse em continuar esse trabalho de evolução, o gerenciamento pode ser renovado para que o perfil permaneça competitivo frente às constantes mudanças do Google e das ferramentas de Inteligência Artificial.
+O posicionamento, entretanto, é um processo contínuo. Empresas que mantêm o perfil atualizado, publicam conteúdo com frequência e acompanham as mudanças do Google tendem a conquistar mais visibilidade e gerar novas oportunidades de negócio.
 
 </p>
 
-</div>
+<br>
+
+<p>
+
+Caso deseje continuar esse trabalho de evolução, ficarei à disposição para dar sequência ao gerenciamento e manter a empresa competitiva nas pesquisas locais.
+
+</p>
+
+</section>
 
 <footer>
 
-Relatório desenvolvido por <strong>RSA Digital</strong><br>
+<strong>RSA Digital</strong><br>
 
 Especialista em Posicionamento Estratégico no Google
 
