@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="dark">
+<html lang="pt-BR">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,6 @@
 
   <script>
     tailwind.config = {
-      darkMode: 'class',
       theme: {
         extend: {
           fontFamily: {
@@ -30,15 +29,15 @@
 
   <style>
     body {
-      background-color: #0b0f17;
-      color: #e2e8f0;
+      background-color: #f8fafc;
+      color: #334155;
       -webkit-font-smoothing: antialiased;
     }
     
     .glass-panel {
-      background: rgba(17, 24, 39, 0.75);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.07);
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.02), 0 1px 2px -1px rgba(0, 0, 0, 0.02);
     }
 
     /* Ocultar barra de rolagem mas permitir scroll no carrossel */
@@ -55,205 +54,205 @@
     }
   </style>
 </head>
-<body class="font-sans antialiased text-slate-300 min-h-screen pb-16">
+<body class="font-sans antialiased text-slate-700 min-h-screen pb-16">
 
   <div class="max-w-4xl mx-auto px-4 sm:px-6 pt-6 sm:pt-10">
     
-    <!-- Header Vercel/Stripe style -->
-    <header class="glass-panel rounded-xl p-4 sm:p-5 mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-slate-800">
+    <!-- Header Vercel/Stripe Light style -->
+    <header class="glass-panel rounded-xl p-4 sm:p-5 mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
       <div class="flex items-center gap-3">
-        <div class="w-10 h-10 rounded-lg bg-blue-600/20 border border-blue-500/30 text-blue-400 flex items-center justify-center font-semibold text-sm">
+        <div class="w-10 h-10 rounded-lg bg-blue-50 border border-blue-200 text-blue-600 flex items-center justify-center font-bold text-sm shadow-sm">
           LC3
         </div>
         <div>
-          <h1 class="text-base sm:text-lg font-semibold text-white tracking-tight">Relatório de Gerenciamento</h1>
-          <p class="text-xs text-slate-400">LC3 Pneus e Rodas • <span class="font-mono text-slate-300">Janeiro a Julho de 2026</span></p>
+          <h1 class="text-base sm:text-lg font-semibold text-slate-900 tracking-tight">Relatório de Gerenciamento</h1>
+          <p class="text-xs text-slate-500">LC3 Pneus e Rodas • <span class="font-mono text-slate-700 font-medium">Janeiro a Julho de 2026</span></p>
         </div>
       </div>
 
       <div class="flex items-center gap-2 self-start sm:self-auto">
-        <span class="inline-flex items-center px-2.5 py-1 rounded-md text-[11px] font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-1.5 animate-pulse"></span> Ativo
+        <span class="inline-flex items-center px-2.5 py-1 rounded-md text-[11px] font-medium bg-emerald-50 text-emerald-700 border border-emerald-200">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5 animate-pulse"></span> Ativo
         </span>
       </div>
     </header>
 
-    <section class="glass-panel rounded-xl p-5 mb-6 border-slate-800">
-      <div class="flex items-center justify-between mb-4 pb-3 border-b border-slate-800">
-        <h2 class="text-sm font-semibold text-white uppercase tracking-wider text-xs">Resumo das Atividades</h2>
-        <span class="text-[11px] text-slate-400">Escopo Executado</span>
+    <section class="glass-panel rounded-xl p-5 mb-6">
+      <div class="flex items-center justify-between mb-4 pb-3 border-b border-slate-100">
+        <h2 class="text-xs font-semibold text-slate-900 uppercase tracking-wider">Resumo das Atividades</h2>
+        <span class="text-[11px] text-slate-500 font-medium">Escopo Executado</span>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <!-- Box 1 -->
-        <div class="bg-slate-900/60 p-3.5 rounded-lg border border-slate-800/80">
+        <div class="bg-slate-50/80 p-3.5 rounded-lg border border-slate-200/80 hover:border-slate-300 transition">
           <div class="flex items-center justify-between mb-1.5">
-            <span class="text-xs font-medium text-slate-200">Conteúdo</span>
-            <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 border border-blue-500/20 px-2 py-0.5 rounded">Frequência</span>
+            <span class="text-xs font-semibold text-slate-800">Conteúdo</span>
+            <span class="text-[10px] font-mono bg-blue-50 text-blue-600 border border-blue-200 px-2 py-0.5 rounded font-medium">Frequência</span>
           </div>
-          <p class="text-xs text-slate-400">Publicações frequentes no perfil.</p>
+          <p class="text-xs text-slate-600">Publicações frequentes no perfil.</p>
         </div>
 
         <!-- Box 2 -->
-        <div class="bg-slate-900/60 p-3.5 rounded-lg border border-slate-800/80">
+        <div class="bg-slate-50/80 p-3.5 rounded-lg border border-slate-200/80 hover:border-slate-300 transition">
           <div class="flex items-center justify-between mb-1.5">
-            <span class="text-xs font-medium text-slate-200">SEO Local</span>
-            <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 border border-blue-500/20 px-2 py-0.5 rounded">Otimização</span>
+            <span class="text-xs font-semibold text-slate-800">SEO Local</span>
+            <span class="text-[10px] font-mono bg-blue-50 text-blue-600 border border-blue-200 px-2 py-0.5 rounded font-medium">Otimização</span>
           </div>
-          <p class="text-xs text-slate-400">Palavras-chave e lista de serviços.</p>
+          <p class="text-xs text-slate-600">Palavras-chave e lista de serviços.</p>
         </div>
 
         <!-- Box 3 -->
-        <div class="bg-slate-900/60 p-3.5 rounded-lg border border-slate-800/80">
+        <div class="bg-slate-50/80 p-3.5 rounded-lg border border-slate-200/80 hover:border-slate-300 transition">
           <div class="flex items-center justify-between mb-1.5">
-            <span class="text-xs font-medium text-slate-200">Galeria</span>
-            <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 border border-blue-500/20 px-2 py-0.5 rounded">Mídia</span>
+            <span class="text-xs font-semibold text-slate-800">Galeria</span>
+            <span class="text-[10px] font-mono bg-blue-50 text-blue-600 border border-blue-200 px-2 py-0.5 rounded font-medium">Mídia</span>
           </div>
-          <p class="text-xs text-slate-400">Fotos e vídeos atualizados.</p>
+          <p class="text-xs text-slate-600">Fotos e vídeos atualizados.</p>
         </div>
 
         <!-- Box 4 -->
-        <div class="bg-slate-900/60 p-3.5 rounded-lg border border-slate-800/80">
+        <div class="bg-slate-50/80 p-3.5 rounded-lg border border-slate-200/80 hover:border-slate-300 transition">
           <div class="flex items-center justify-between mb-1.5">
-            <span class="text-xs font-medium text-slate-200">Monitoramento</span>
-            <span class="text-[10px] font-mono bg-blue-500/10 text-blue-400 border border-blue-500/20 px-2 py-0.5 rounded">Gestão</span>
+            <span class="text-xs font-semibold text-slate-800">Monitoramento</span>
+            <span class="text-[10px] font-mono bg-blue-50 text-blue-600 border border-blue-200 px-2 py-0.5 rounded font-medium">Gestão</span>
           </div>
-          <p class="text-xs text-slate-400">Acompanhamento contínuo do perfil.</p>
+          <p class="text-xs text-slate-600">Acompanhamento contínuo do perfil.</p>
         </div>
       </div>
     </section>
 
-    <section class="glass-panel rounded-xl p-5 mb-6 border-slate-800">
+    <section class="glass-panel rounded-xl p-5 mb-6">
       <div class="flex items-center justify-between mb-3">
-        <h2 class="text-xs font-semibold text-white uppercase tracking-wider">Resultados</h2>
-        <span class="text-[10px] font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2 py-0.5 rounded">Evolução</span>
+        <h2 class="text-xs font-semibold text-slate-900 uppercase tracking-wider">Resultados</h2>
+        <span class="text-[10px] font-mono bg-emerald-50 text-emerald-700 border border-emerald-200 px-2 py-0.5 rounded font-medium">Evolução</span>
       </div>
 
-      <ul class="space-y-2.5 text-xs text-slate-300">
-        <li class="flex items-start gap-2.5 bg-slate-900/40 p-3 rounded-lg border border-slate-800/60">
-          <i class="fa-solid fa-check text-emerald-400 mt-0.5"></i>
-          <span>Aparece para alinhamento e balanceamento.</span>
+      <ul class="space-y-2.5 text-xs text-slate-700">
+        <li class="flex items-start gap-2.5 bg-slate-50/80 p-3 rounded-lg border border-slate-200/80">
+          <i class="fa-solid fa-circle-check text-emerald-600 text-sm mt-0.5"></i>
+          <span class="font-medium text-slate-800">Aparece para alinhamento e balanceamento.</span>
         </li>
-        <li class="flex items-start gap-2.5 bg-slate-900/40 p-3 rounded-lg border border-slate-800/60">
-          <i class="fa-solid fa-check text-emerald-400 mt-0.5"></i>
-          <span>Crescimento em borracharia e pneus.</span>
+        <li class="flex items-start gap-2.5 bg-slate-50/80 p-3 rounded-lg border border-slate-200/80">
+          <i class="fa-solid fa-circle-check text-emerald-600 text-sm mt-0.5"></i>
+          <span class="font-medium text-slate-800">Crescimento em borracharia e pneus.</span>
         </li>
       </ul>
     </section>
 
-    <section class="glass-panel rounded-xl p-5 mb-6 border-slate-800">
+    <section class="glass-panel rounded-xl p-5 mb-6">
       <div class="flex items-center justify-between mb-3">
-        <h2 class="text-xs font-semibold text-white uppercase tracking-wider">Buscas com IA</h2>
-        <span class="text-[10px] font-mono bg-amber-500/10 text-amber-400 border border-amber-500/20 px-2 py-0.5 rounded">Tendência</span>
+        <h2 class="text-xs font-semibold text-slate-900 uppercase tracking-wider">Buscas com IA</h2>
+        <span class="text-[10px] font-mono bg-amber-50 text-amber-700 border border-amber-200 px-2 py-0.5 rounded font-medium">Tendência</span>
       </div>
 
-      <p class="text-xs text-slate-300 mb-3">
+      <p class="text-xs text-slate-600 mb-3">
         A LC3 já aparece em recomendações por IA.
       </p>
 
       <!-- Imagem de Comprovante de IA -->
-      <div class="group relative rounded-lg overflow-hidden border border-slate-800 bg-slate-900 cursor-pointer shadow-md" id="imgTrigger">
-        <img id="thumbImg" src="/images/print-busca.JPG" alt="Comprovante de Busca com IA" class="w-full h-44 object-cover group-hover:scale-102 transition duration-300 opacity-90 group-hover:opacity-100" onerror="this.src='https://placehold.co/800x400/1e293b/94a3b8?text=Evidencia+de+Busca+IA+LC3'">
-        <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-transparent to-transparent flex items-end justify-between p-3">
-          <span class="text-[11px] font-medium text-slate-200 flex items-center gap-1.5">
-            <i class="fa-solid fa-magnifying-glass-plus text-blue-400"></i> Clique para ampliar imagem
+      <div class="group relative rounded-lg overflow-hidden border border-slate-200 bg-slate-100 cursor-pointer shadow-sm" id="imgTrigger">
+        <img id="thumbImg" src="/images/print-busca.JPG" alt="Comprovante de Busca com IA" class="w-full h-44 object-cover group-hover:scale-101 transition duration-300" onerror="this.src='https://placehold.co/800x400/f1f5f9/475569?text=Evidencia+de+Busca+IA+LC3'">
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/10 to-transparent flex items-end justify-between p-3">
+          <span class="text-[11px] font-medium text-white flex items-center gap-1.5">
+            <i class="fa-solid fa-magnifying-glass-plus text-blue-300"></i> Clique para ampliar imagem
           </span>
-          <span class="text-[10px] font-mono text-slate-400 bg-slate-950/80 px-2 py-0.5 rounded border border-slate-800">print-busca.JPG</span>
+          <span class="text-[10px] font-mono text-slate-200 bg-slate-950/60 px-2 py-0.5 rounded border border-white/20">print-busca.JPG</span>
         </div>
       </div>
     </section>
 
-    <section class="glass-panel rounded-xl p-5 mb-6 border-slate-800">
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-800">
+    <section class="glass-panel rounded-xl p-5 mb-6">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
         <div>
-          <h2 class="text-xs font-semibold text-white uppercase tracking-wider">Continuidade & Planos</h2>
-          <p class="text-xs text-slate-400 mt-0.5">Selecione uma das opções abaixo para ser direcionado ao WhatsApp</p>
+          <h2 class="text-xs font-semibold text-slate-900 uppercase tracking-wider">Continuidade & Planos</h2>
+          <p class="text-xs text-slate-500 mt-0.5">Selecione uma das opções abaixo para ser direcionado ao WhatsApp</p>
         </div>
         <div class="flex items-center gap-2 self-start sm:self-auto">
-          <div class="text-[10px] font-mono text-blue-400 bg-blue-500/10 border border-blue-500/20 px-2.5 py-1 rounded-md flex items-center gap-1.5">
+          <div class="text-[10px] font-mono text-blue-600 bg-blue-50 border border-blue-200 px-2.5 py-1 rounded-md flex items-center gap-1.5 font-medium">
             <i class="fa-solid fa-hand-pointer animate-bounce"></i> Arraste para o lado
           </div>
           <!-- Botões de navegação manual -->
-          <button id="prevBtn" class="w-7 h-7 rounded-md bg-slate-800 hover:bg-slate-700 text-slate-300 flex items-center justify-center text-xs transition border border-slate-700 active:scale-95" title="Anterior">
+          <button id="prevBtn" class="w-7 h-7 rounded-md bg-white hover:bg-slate-100 text-slate-700 flex items-center justify-center text-xs transition border border-slate-200 shadow-sm active:scale-95" title="Anterior">
             <i class="fa-solid fa-chevron-left"></i>
           </button>
-          <button id="nextBtn" class="w-7 h-7 rounded-md bg-slate-800 hover:bg-slate-700 text-slate-300 flex items-center justify-center text-xs transition border border-slate-700 active:scale-95" title="Próximo">
+          <button id="nextBtn" class="w-7 h-7 rounded-md bg-white hover:bg-slate-100 text-slate-700 flex items-center justify-center text-xs transition border border-slate-200 shadow-sm active:scale-95" title="Próximo">
             <i class="fa-solid fa-chevron-right"></i>
           </button>
         </div>
       </div>
 
-      <!-- Carrossel Deslizante de 4 Cards -->
+      <!-- Carrossel Deslizante de 4 Cards (Tema Claro) -->
       <div class="relative overflow-hidden my-4 rounded-xl">
         <div id="plansCarousel" class="carousel-container flex gap-4 overflow-x-auto no-scrollbar py-2 px-1 cursor-grab active:cursor-grabbing select-none">
           
           <!-- Card 1: Essencial Semestral -->
-          <div class="plan-card shrink-0 w-[270px] sm:w-[290px] bg-slate-900/90 rounded-xl p-4 border border-slate-800 hover:border-blue-500/50 transition flex flex-col justify-between">
+          <div class="plan-card shrink-0 w-[270px] sm:w-[290px] bg-white rounded-xl p-4 border border-slate-200 hover:border-blue-400 shadow-sm transition flex flex-col justify-between">
             <div>
               <div class="flex items-center justify-between mb-2">
-                <span class="text-sm font-semibold text-white">Essencial</span>
-                <span class="text-[10px] font-mono text-slate-400 bg-slate-800 px-2 py-0.5 rounded">Semestral</span>
+                <span class="text-sm font-semibold text-slate-900">Essencial</span>
+                <span class="text-[10px] font-mono text-slate-600 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 font-medium">Semestral</span>
               </div>
-              <div class="text-2xl font-bold text-white tracking-tight mb-1">
-                R$ 200 <span class="text-xs text-slate-400 font-normal">/mês</span>
+              <div class="text-2xl font-bold text-slate-900 tracking-tight mb-1">
+                R$ 200 <span class="text-xs text-slate-500 font-normal">/mês</span>
               </div>
-              <p class="text-xs text-slate-400 mb-4 h-10">Crescimento gradual das palavras-chave. (1 publicação/semana)</p>
+              <p class="text-xs text-slate-600 mb-4 h-10">Crescimento gradual das palavras-chave. (1 publicação/semana)</p>
             </div>
-            <a href="https://wa.me/5512988052097?text=Ol%C3%A1!%20Gostaria%20de%20contratar%20o%20Plano%20Essencial%20Semestral%20(R%24%20200%2Fm%C3%AAs)%20para%20a%20LC3%20Pneus%20e%20Rodas." target="_blank" class="w-full py-2.5 px-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-medium text-xs border border-slate-700 flex items-center justify-center gap-2 transition">
+            <a href="https://wa.me/5512988052097?text=Ol%C3%A1!%20Gostaria%20de%20contratar%20o%20Plano%20Essencial%20Semestral%20(R%24%20200%2Fm%C3%AAs)%20para%20a%20LC3%20Pneus%20e%20Rodas." target="_blank" class="w-full py-2.5 px-3 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-medium text-xs flex items-center justify-center gap-2 transition shadow-sm">
               <i class="fa-brands fa-whatsapp text-emerald-400 text-sm"></i>
               <span>Contratar Semestral</span>
             </a>
           </div>
 
           <!-- Card 2: Essencial Anual -->
-          <div class="plan-card shrink-0 w-[270px] sm:w-[290px] bg-slate-900/90 rounded-xl p-4 border border-slate-800 hover:border-blue-500/50 transition flex flex-col justify-between">
+          <div class="plan-card shrink-0 w-[270px] sm:w-[290px] bg-white rounded-xl p-4 border border-slate-200 hover:border-blue-400 shadow-sm transition flex flex-col justify-between">
             <div>
               <div class="flex items-center justify-between mb-2">
-                <span class="text-sm font-semibold text-white">Essencial</span>
-                <span class="text-[10px] font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded">Anual</span>
+                <span class="text-sm font-semibold text-slate-900">Essencial</span>
+                <span class="text-[10px] font-mono text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded font-medium">Anual</span>
               </div>
-              <div class="text-2xl font-bold text-white tracking-tight mb-1">
-                R$ 150 <span class="text-xs text-slate-400 font-normal">/mês</span>
+              <div class="text-2xl font-bold text-slate-900 tracking-tight mb-1">
+                R$ 150 <span class="text-xs text-slate-500 font-normal">/mês</span>
               </div>
-              <p class="text-xs text-slate-400 mb-4 h-10">Crescimento gradual das palavras-chave. (1 publicação/semana)</p>
+              <p class="text-xs text-slate-600 mb-4 h-10">Crescimento gradual das palavras-chave. (1 publicação/semana)</p>
             </div>
-            <a href="https://wa.me/5512988052097?text=Ol%C3%A1!%20Gostaria%20de%20contratar%20o%20Plano%20Essencial%20Anual%20(R%24%20150%2Fm%C3%AAs)%20para%20a%20LC3%20Pneus%20e%20Rodas." target="_blank" class="w-full py-2.5 px-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-medium text-xs border border-slate-700 flex items-center justify-center gap-2 transition">
+            <a href="https://wa.me/5512988052097?text=Ol%C3%A1!%20Gostaria%20de%20contratar%20o%20Plano%20Essencial%20Anual%20(R%24%20150%2Fm%C3%AAs)%20para%20a%20LC3%20Pneus%20e%20Rodas." target="_blank" class="w-full py-2.5 px-3 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-medium text-xs flex items-center justify-center gap-2 transition shadow-sm">
               <i class="fa-brands fa-whatsapp text-emerald-400 text-sm"></i>
               <span>Contratar Anual</span>
             </a>
           </div>
 
           <!-- Card 3: Estratégico Semestral -->
-          <div class="plan-card shrink-0 w-[270px] sm:w-[290px] bg-slate-900/90 rounded-xl p-4 border border-blue-500/40 hover:border-blue-500 transition flex flex-col justify-between">
+          <div class="plan-card shrink-0 w-[270px] sm:w-[290px] bg-white rounded-xl p-4 border-2 border-blue-500 shadow-md shadow-blue-500/5 transition flex flex-col justify-between relative">
             <div>
               <div class="flex items-center justify-between mb-2">
-                <span class="text-sm font-semibold text-white">Estratégico</span>
-                <span class="text-[10px] font-mono text-slate-400 bg-slate-800 px-2 py-0.5 rounded">Semestral</span>
+                <span class="text-sm font-semibold text-slate-900">Estratégico</span>
+                <span class="text-[10px] font-mono text-slate-600 bg-slate-100 px-2 py-0.5 rounded border border-slate-200 font-medium">Semestral</span>
               </div>
-              <div class="text-2xl font-bold text-white tracking-tight mb-1">
-                R$ 250 <span class="text-xs text-slate-400 font-normal">/mês</span>
+              <div class="text-2xl font-bold text-slate-900 tracking-tight mb-1">
+                R$ 250 <span class="text-xs text-slate-500 font-normal">/mês</span>
               </div>
-              <p class="text-xs text-slate-400 mb-4 h-10">Maior volume de conteúdo para acelerar o ganho de relevância. (3 publicações/semana)</p>
+              <p class="text-xs text-slate-600 mb-4 h-10">Maior volume de conteúdo para acelerar o ganho de relevância. (3 publicações/semana)</p>
             </div>
-            <a href="https://wa.me/5512988052097?text=Ol%C3%A1!%20Gostaria%20de%20contratar%20o%20Plano%20Estrat%C3%A9gico%20Semestral%20(R%24%20250%2Fm%C3%AAs)%20para%20a%20LC3%20Pneus%20e%20Rodas." target="_blank" class="w-full py-2.5 px-3 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-medium text-xs flex items-center justify-center gap-2 transition shadow-lg shadow-blue-600/20">
+            <a href="https://wa.me/5512988052097?text=Ol%C3%A1!%20Gostaria%20de%20contratar%20o%20Plano%20Estrat%C3%A9gico%20Semestral%20(R%24%20250%2Fm%C3%AAs)%20para%20a%20LC3%20Pneus%20e%20Rodas." target="_blank" class="w-full py-2.5 px-3 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-medium text-xs flex items-center justify-center gap-2 transition shadow-md shadow-blue-600/20">
               <i class="fa-brands fa-whatsapp text-white text-sm"></i>
               <span>Contratar Semestral</span>
             </a>
           </div>
 
           <!-- Card 4: Estratégico Anual -->
-          <div class="plan-card shrink-0 w-[270px] sm:w-[290px] bg-slate-900/90 rounded-xl p-4 border border-blue-500/40 hover:border-blue-500 transition flex flex-col justify-between">
+          <div class="plan-card shrink-0 w-[270px] sm:w-[290px] bg-white rounded-xl p-4 border-2 border-blue-500 shadow-md shadow-blue-500/5 transition flex flex-col justify-between relative">
             <div>
               <div class="flex items-center justify-between mb-2">
-                <span class="text-sm font-semibold text-white">Estratégico</span>
-                <span class="text-[10px] font-mono text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded">Anual</span>
+                <span class="text-sm font-semibold text-slate-900">Estratégico</span>
+                <span class="text-[10px] font-mono text-emerald-700 bg-emerald-50 border border-emerald-200 px-2 py-0.5 rounded font-medium">Anual</span>
               </div>
-              <div class="text-2xl font-bold text-white tracking-tight mb-1">
-                R$ 200 <span class="text-xs text-slate-400 font-normal">/mês</span>
+              <div class="text-2xl font-bold text-slate-900 tracking-tight mb-1">
+                R$ 200 <span class="text-xs text-slate-500 font-normal">/mês</span>
               </div>
-              <p class="text-xs text-slate-400 mb-4 h-10">Maior volume de conteúdo para acelerar o ganho de relevância. (3 publicações/semana)</p>
+              <p class="text-xs text-slate-600 mb-4 h-10">Maior volume de conteúdo para acelerar o ganho de relevância. (3 publicações/semana)</p>
             </div>
-            <a href="https://wa.me/5512988052097?text=Ol%C3%A1!%20Gostaria%20de%20contratar%20o%20Plano%20Estrat%C3%A9gico%20Anual%20(R%24%20200%2Fm%C3%AAs)%20para%20a%20LC3%20Pneus%20e%20Rodas." target="_blank" class="w-full py-2.5 px-3 rounded-lg bg-blue-600 hover:bg-blue-500 text-white font-medium text-xs flex items-center justify-center gap-2 transition shadow-lg shadow-blue-600/20">
+            <a href="https://wa.me/5512988052097?text=Ol%C3%A1!%20Gostaria%20de%20contratar%20o%20Plano%20Estrat%C3%A9gico%20Anual%20(R%24%20200%2Fm%C3%AAs)%20para%20a%20LC3%20Pneus%20e%20Rodas." target="_blank" class="w-full py-2.5 px-3 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-medium text-xs flex items-center justify-center gap-2 transition shadow-md shadow-blue-600/20">
               <i class="fa-brands fa-whatsapp text-white text-sm"></i>
               <span>Contratar Anual</span>
             </a>
@@ -266,53 +265,53 @@
       <div class="overflow-x-auto mt-6">
         <table class="w-full text-left text-xs border-collapse">
           <thead>
-            <tr class="border-b border-slate-800 text-slate-400 font-medium">
-              <th class="py-2.5 px-3 font-normal">Plano</th>
-              <th class="py-2.5 px-3 font-normal">Publicações</th>
-              <th class="py-2.5 px-3 font-normal">Semestral</th>
-              <th class="py-2.5 px-3 font-normal">Anual</th>
+            <tr class="border-b border-slate-200 text-slate-500 font-medium bg-slate-50/50">
+              <th class="py-2.5 px-3 font-semibold text-slate-700">Plano</th>
+              <th class="py-2.5 px-3 font-semibold text-slate-700">Publicações</th>
+              <th class="py-2.5 px-3 font-semibold text-slate-700">Semestral</th>
+              <th class="py-2.5 px-3 font-semibold text-slate-700">Anual</th>
             </tr>
           </thead>
-          <tbody class="divide-y divide-slate-800/60 text-slate-300">
+          <tbody class="divide-y divide-slate-100 text-slate-700">
             <tr>
-              <td class="py-2.5 px-3 font-medium text-white">Essencial</td>
+              <td class="py-2.5 px-3 font-semibold text-slate-900">Essencial</td>
               <td class="py-2.5 px-3">1 / semana</td>
               <td class="py-2.5 px-3 font-mono">R$ 200/mês</td>
-              <td class="py-2.5 px-3 font-mono text-emerald-400">R$ 150/mês</td>
+              <td class="py-2.5 px-3 font-mono text-emerald-600 font-semibold">R$ 150/mês</td>
             </tr>
             <tr>
-              <td class="py-2.5 px-3 font-medium text-white">Estratégico</td>
+              <td class="py-2.5 px-3 font-semibold text-slate-900">Estratégico</td>
               <td class="py-2.5 px-3">3 / semana</td>
               <td class="py-2.5 px-3 font-mono">R$ 250/mês</td>
-              <td class="py-2.5 px-3 font-mono text-emerald-400">R$ 200/mês</td>
+              <td class="py-2.5 px-3 font-mono text-emerald-600 font-semibold">R$ 200/mês</td>
             </tr>
           </tbody>
         </table>
       </div>
 
       <!-- Condição de Pagamento -->
-      <div class="mt-5 p-3.5 rounded-lg bg-blue-950/20 border border-blue-500/20 text-xs text-slate-300 flex items-start gap-2.5">
-        <i class="fa-solid fa-circle-info text-blue-400 mt-0.5 shrink-0"></i>
+      <div class="mt-5 p-3.5 rounded-lg bg-blue-50/60 border border-blue-200/80 text-xs text-slate-700 flex items-start gap-2.5">
+        <i class="fa-solid fa-circle-info text-blue-600 mt-0.5 shrink-0"></i>
         <div>
-          Pagamento mensal via Pix ou boleto. Pagamento integral antecipado via Pix: <strong class="text-white">5% de desconto adicional</strong>.
+          Pagamento mensal via Pix ou boleto. Pagamento integral antecipado via Pix: <strong class="text-slate-900 font-semibold">5% de desconto adicional</strong>.
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="text-center text-xs text-slate-500 py-4">
+    <footer class="text-center text-xs text-slate-400 py-4">
       LC3 Pneus e Rodas • Relatório de Gerenciamento 2026
     </footer>
 
   </div>
 
   <!-- Modal de Zoom para Imagem -->
-  <div id="modal" class="fixed inset-0 bg-slate-950/90 backdrop-blur-sm z-50 hidden items-center justify-center p-4 cursor-zoom-out">
+  <div id="modal" class="fixed inset-0 bg-slate-900/80 backdrop-blur-sm z-50 hidden items-center justify-center p-4 cursor-zoom-out">
     <div class="relative max-w-3xl w-full max-h-[90vh] flex flex-col items-center">
-      <button id="modalClose" class="absolute -top-8 right-0 text-slate-400 hover:text-white text-xs font-mono flex items-center gap-1">
+      <button id="modalClose" class="absolute -top-8 right-0 text-slate-200 hover:text-white text-xs font-mono flex items-center gap-1">
         <i class="fa-solid fa-xmark"></i> Fechar (ESC)
       </button>
-      <img id="modalImg" src="/images/print-busca.JPG" alt="Comprovante Ampliado" class="max-w-full max-h-[80vh] rounded-lg border border-slate-800 shadow-2xl object-contain">
+      <img id="modalImg" src="/images/print-busca.JPG" alt="Comprovante Ampliado" class="max-w-full max-h-[80vh] rounded-lg border border-slate-700 shadow-2xl object-contain">
     </div>
   </div>
 
